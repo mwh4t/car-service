@@ -22,8 +22,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/">Glavnaiy</a></li>
-                    <li><a href="/about">about me</a></li>
+                    <li><a href="/">Main</a></li>
+                    <li><a href="/about">about</a></li>
                     <li><a href="/contact">contact</a></li>
                 </ul>
             </div>
