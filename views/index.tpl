@@ -6,10 +6,42 @@
         background-size: cover;
         background-position: center;
         color: white;
-        padding: 150px 0;
-        text-align: center;
+        padding: 60px 0;
     }
-    
+
+    .hero-content {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .mechanic-img {
+        width: 400px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hero-text {
+        text-align: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        line-height: 1.2;
+    }
+
+    .button-wrapper {
+        text-align: center;
+        margin-top: 20px;
+    }
+
     .features-section {
         padding: 80px 0;
         background: #f8f9fa;
@@ -53,12 +85,21 @@
     .submit-btn:hover {
         background: #0056b3;
     }
+
 </style>
 
 <div class="hero-section">
     <div class="container">
-        <h1 class="mb-4">Your Car in Safe Hands</h1>
-        <a href="#booking" class="btn btn-primary btn-lg">Book Inspection</a>
+        <div class="hero-content">
+            <img src="static/images/mechanic.png" class="mechanic-img">
+            <div class="hero-text">
+                <h1>Your  Car  in </h1>
+                <h1> Safe Hands </h1>
+                <div class="button-wrapper">
+                    <a href="#booking" class="btn btn-primary btn-lg">Book Inspection</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

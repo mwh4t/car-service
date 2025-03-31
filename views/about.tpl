@@ -27,6 +27,22 @@
             margin-top: 20px;
             font-size: 16px;
         }
+        .booking-jumper {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .booking-btn {
+            background: #007bff;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+        .booking-btn:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 
@@ -45,16 +61,12 @@
         
         <div class="contact">
             <h3>Contact Us</h3>
-            <form action="/submit-phone" method="post">
-                <div class="form-group">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99"
-                        pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
-                </div>
-                <button type="submit" class="submit-btn" style="margin-bottom:20px;">Submit</button>
-            </form>
             <p><strong>Support:</strong> <a href="mailto:Support@example.com">ab4shevD@mail.ru</a></p>
             <p><strong>Marketing:</strong> <a href="mailto:Marketing@example.com">mwh4t@yandex.ru</a></p>
+        </div>
+
+        <div class="booking-jumper">
+            <a href="/#booking" class="booking-btn">Book Inspection Now</a>
         </div>
     </div>
 </body>

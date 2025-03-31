@@ -50,6 +50,22 @@
         .menu a:hover {
             background: red;
         }
+        .booking-jumper {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .booking-btn {
+            background: #007bff;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+        .booking-btn:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -92,6 +108,9 @@
                 <img src="static/images/tow_truck.png" alt="Tow Truck Services">
                 <p>Tow Truck Services</p>
             </div>
+        </div>
+        <div class="booking-jumper">
+            <a href="/#booking" class="booking-btn">Book Inspection Now</a>
         </div>
     </div>
 </body>
