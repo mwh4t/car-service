@@ -6,11 +6,21 @@
     <title>KorAb Group</title>
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <style>
+        .navbar {
+            background-color: #b94a48;
+        }
+        .navbar-nav > li > a {
+            color: white !important;
+            font-size: 32px;
+            padding: 52px 112px;
+        }
+    </style>
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -18,12 +28,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="">
-                <a href="/" class="navbar-brand">KorAb Group</a>
+                <a href="/" class="navbar-brand">
+                    <img src="static/images/logo.png" style="height: 100px;" alt="KorAb Group" />
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/main">Main</a></li>
+                    <li><a href="/">Main</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/contact">Services</a></li>
                 </ul>
