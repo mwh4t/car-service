@@ -16,13 +16,6 @@
             background-color: #f4f4f4;
             text-align: center;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
         h1 {
             color: #333;
         }
@@ -64,39 +57,39 @@
         <h1>Our Services</h1>
         <div class="grid">
             <div class="service-box">
-                <img src="fluid_diagnostics.png" alt="Fluid Diagnostics">
+                <img src="static/images/fluid_diagnostics.png" alt="Fluid Diagnostics">
                 <p>Fluid Diagnostics</p>
             </div>
             <div class="service-box">
-                <img src="electronic_diagnostics.png" alt="Electronic Diagnostics">
+                <img src="static/images/electronic_diagnostics.png" alt="Electronic Diagnostics">
                 <p>Electronic Diagnostics</p>
             </div>
             <div class="service-box">
-                <img src="chassis_diagnostics.png" alt="Chassis Diagnostics">
+                <img src="static/images/chassis_diagnostics.png" alt="Chassis Diagnostics">
                 <p>Chassis Diagnostics</p>
             </div>
             <div class="service-box">
-                <img src="chassis_repair.png" alt="Chassis Repair">
+                <img src="static/images/chassis_repair.png" alt="Chassis Repair">
                 <p>Chassis Repair</p>
             </div>
             <div class="service-box">
-                <img src="electronic_repair.png" alt="Electronic Repair">
+                <img src="static/images/electronic_repair.png" alt="Electronic Repair">
                 <p>Electronic Repair</p>
             </div>
             <div class="service-box">
-                <img src="body_work.png" alt="Body Work">
+                <img src="static/images/body_work.png" alt="Body Work">
                 <p>Body Work</p>
             </div>
             <div class="service-box">
-                <img src="tire_service.png" alt="Tire Service">
+                <img src="static/images/tire_service.png" alt="Tire Service">
                 <p>Tire Service</p>
             </div>
             <div class="service-box">
-                <img src="headlight_adjustment.png" alt="Headlight Adjustment">
+                <img src="static/images/headlight_adjustment.png" alt="Headlight Adjustment">
                 <p>Headlight Adjustment</p>
             </div>
             <div class="service-box">
-                <img src="tow_truck.png" alt="Tow Truck Services">
+                <img src="static/images/tow_truck.png" alt="Tow Truck Services">
                 <p>Tow Truck Services</p>
             </div>
         </div>

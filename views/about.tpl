@@ -16,21 +16,8 @@
             background-color: #f4f4f4;
             text-align: center;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
         h1 {
             color: #333;
-        }
-        img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            margin: 20px 0;
         }
         p {
             font-size: 18px;
@@ -42,6 +29,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1><strong>KorAb Group</strong> - one of the new, modern auto services in Saint Petersburg</h1>
@@ -57,8 +45,14 @@
         
         <div class="contact">
             <h3>Contact Us</h3>
-            <p></p>
-            <p><strong>Phone:</strong> +7(9__)-___-__-__</p>
+            <form action="/submit-phone" method="post">
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99"
+                        pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
+                </div>
+                <button type="submit" class="submit-btn" style="margin-bottom:20px;">Submit</button>
+            </form>
             <p><strong>Support:</strong> <a href="mailto:Support@example.com">ab4shevD@mail.ru</a></p>
             <p><strong>Marketing:</strong> <a href="mailto:Marketing@example.com">mwh4t@yandex.ru</a></p>
         </div>

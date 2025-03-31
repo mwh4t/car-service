@@ -18,14 +18,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <p><p/>
                 <img src="">
-                <p><p/>
-                <a href="/" class="navbar-brand">KorAbGroup</a>
+                <a href="/" class="navbar-brand">KorAb Group</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/">Main</a></li>
+                    <li><a href="/main">Main</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/contact">Services</a></li>
                 </ul>
@@ -36,9 +34,6 @@
     <div class="container body-content">
         {{!base}}
         <hr />
-        <footer>
-            <p>&copy; {{ year }} - My Bottle Application</p>
-        </footer>
     </div>
 
     <script src="/static/scripts/jquery-1.10.2.js"></script>
