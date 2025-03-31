@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\TBG\\source\\repos\\car-service\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TBG\\source\\repos\\car-service\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TBG\\source\\repos\\car-service\\views\\contact.tpl||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\contact.tpl||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TBG\\source\\repos\\car-service\\views\\index.tpl||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\index.tpl||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TBG\\source\\repos\\car-service\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TBG\\source\\repos\\car-service\\views\\layout.tpl||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\layout.tpl||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TBG\\source\\repos\\car-service\\views\\about.tpl||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\about.tpl||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TBG\\source\\repos\\car-service\\routes.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TBG\\source\\repos\\car-service\\views\\contact.tpl||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\contact.tpl||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TBG\\source\\repos\\car-service\\.idea\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -30,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\TBG\\source\\repos\\car-service\\.idea\\.gitignore",
               "RelativeDocumentMoniker": ".idea\\.gitignore",
@@ -48,54 +56,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "index.tpl",
-              "DocumentMoniker": "C:\\Users\\TBG\\source\\repos\\car-service\\views\\index.tpl",
-              "RelativeDocumentMoniker": "views\\index.tpl",
-              "ToolTip": "C:\\Users\\TBG\\source\\repos\\car-service\\views\\index.tpl",
-              "RelativeToolTip": "views\\index.tpl",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-30T12:32:05.118Z",
+              "DocumentIndex": 1,
+              "Title": "app.py",
+              "DocumentMoniker": "C:\\Users\\TBG\\source\\repos\\car-service\\app.py",
+              "RelativeDocumentMoniker": "app.py",
+              "ToolTip": "C:\\Users\\TBG\\source\\repos\\car-service\\app.py",
+              "RelativeToolTip": "app.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-30T11:25:05.564Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "routes.py",
+              "DocumentMoniker": "C:\\Users\\TBG\\source\\repos\\car-service\\routes.py",
+              "RelativeDocumentMoniker": "routes.py",
+              "ToolTip": "C:\\Users\\TBG\\source\\repos\\car-service\\routes.py",
+              "RelativeToolTip": "routes.py",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-31T07:30:11.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "about.tpl",
+              "DocumentMoniker": "C:\\Users\\TBG\\source\\repos\\car-service\\views\\about.tpl",
+              "RelativeDocumentMoniker": "views\\about.tpl",
+              "ToolTip": "C:\\Users\\TBG\\source\\repos\\car-service\\views\\about.tpl",
+              "RelativeToolTip": "views\\about.tpl",
+              "ViewState": "AgIAAB8AAABAMjMzMzMrwC8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-31T06:29:26.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "contact.tpl",
               "DocumentMoniker": "C:\\Users\\TBG\\source\\repos\\car-service\\views\\contact.tpl",
               "RelativeDocumentMoniker": "views\\contact.tpl",
               "ToolTip": "C:\\Users\\TBG\\source\\repos\\car-service\\views\\contact.tpl",
               "RelativeToolTip": "views\\contact.tpl",
-              "ViewState": "AgIAACEAAAAALjMzMzMbwDAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAANjMzMzP7v0IAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-03-30T12:05:38.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "index.tpl",
+              "DocumentMoniker": "C:\\Users\\TBG\\source\\repos\\car-service\\views\\index.tpl",
+              "RelativeDocumentMoniker": "views\\index.tpl",
+              "ToolTip": "C:\\Users\\TBG\\source\\repos\\car-service\\views\\index.tpl",
+              "RelativeToolTip": "views\\index.tpl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-30T12:32:05.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "layout.tpl",
               "DocumentMoniker": "C:\\Users\\TBG\\source\\repos\\car-service\\views\\layout.tpl",
               "RelativeDocumentMoniker": "views\\layout.tpl",
               "ToolTip": "C:\\Users\\TBG\\source\\repos\\car-service\\views\\layout.tpl",
               "RelativeToolTip": "views\\layout.tpl",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-03-30T11:33:45.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "app.py",
-              "DocumentMoniker": "C:\\Users\\TBG\\source\\repos\\car-service\\app.py",
-              "RelativeDocumentMoniker": "app.py",
-              "ToolTip": "C:\\Users\\TBG\\source\\repos\\car-service\\app.py",
-              "RelativeToolTip": "app.py",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-03-30T11:25:05.564Z",
               "EditorCaption": ""
             }
           ]

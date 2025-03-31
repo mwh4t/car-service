@@ -1,6 +1,5 @@
 % rebase('layout.tpl', title=title, year=year)
 
-<h2>{{ title }}.</h2>
 <h3>{{ message }}</h3>
 
 <!DOCTYPE html>
@@ -8,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KorAb Group - Modern Auto Service</title>
+    <title>Services - KorAb Group</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,41 +26,79 @@
         h1 {
             color: #333;
         }
-        img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            margin: 20px 0;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
         }
-        p {
+        .service-box {
+            border: 2px solid red;
+            padding: 15px;
+            text-align: center;
+            background: #fff;
+        }
+        .service-box img {
+            width: 50px;
+            height: 50px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background: black;
+            padding: 10px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
             font-size: 18px;
-            color: #555;
         }
-        .contact {
-            margin-top: 20px;
-            font-size: 16px;
+        .menu a:hover {
+            background: red;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1><strong>KorAb Group</strong> - one of the new, modern auto services in Saint Petersburg</h1>
-        <img src="static\images\Niva.png" alt="Car Repair Process">
-        <p>KorAb Group is a next-generation auto repair shop offering repair and diagnostic services for all vehicles.</p>
-        <p>Our service center is ready to accept cars of any make and complexity.</p>
-        <p>We have all the necessary equipment and specialists who can work with both internal combustion engine cars and hybrid or electric vehicles.</p>
-        
-        <h2>What makes our service unique?</h2>
-        <p>Although we are not official dealers, we are ready to take on any work at any level of complexity.</p>
-        <p>We guarantee high quality and transparency in our work.</p>
-        <p>We are one of the few who can handle electric and hybrid cars, perform factory assembly, and ensure safety in electrical systems.</p>
-        
-        <div class="contact">
-            <h3>Contact Us</h3>
-            <p></p>
-            <p><strong>Phone:</strong> +7(9__)-___-__-__</p>
-            <p><strong>Support:</strong> <a href="mailto:Support@example.com">ab4shevD@mail.ru</a></p>
-            <p><strong>Marketing:</strong> <a href="mailto:Marketing@example.com">mwh4t@yandex.ru</a></p>
+        <h1>Our Services</h1>
+        <div class="grid">
+            <div class="service-box">
+                <img src="fluid_diagnostics.png" alt="Fluid Diagnostics">
+                <p>Fluid Diagnostics</p>
+            </div>
+            <div class="service-box">
+                <img src="electronic_diagnostics.png" alt="Electronic Diagnostics">
+                <p>Electronic Diagnostics</p>
+            </div>
+            <div class="service-box">
+                <img src="chassis_diagnostics.png" alt="Chassis Diagnostics">
+                <p>Chassis Diagnostics</p>
+            </div>
+            <div class="service-box">
+                <img src="chassis_repair.png" alt="Chassis Repair">
+                <p>Chassis Repair</p>
+            </div>
+            <div class="service-box">
+                <img src="electronic_repair.png" alt="Electronic Repair">
+                <p>Electronic Repair</p>
+            </div>
+            <div class="service-box">
+                <img src="body_work.png" alt="Body Work">
+                <p>Body Work</p>
+            </div>
+            <div class="service-box">
+                <img src="tire_service.png" alt="Tire Service">
+                <p>Tire Service</p>
+            </div>
+            <div class="service-box">
+                <img src="headlight_adjustment.png" alt="Headlight Adjustment">
+                <p>Headlight Adjustment</p>
+            </div>
+            <div class="service-box">
+                <img src="tow_truck.png" alt="Tow Truck Services">
+                <p>Tow Truck Services</p>
+            </div>
         </div>
     </div>
 </body>
