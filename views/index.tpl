@@ -125,9 +125,9 @@
 <div class="container py-5" id="booking">
     <div class="booking-form">
         <h2 class="text-center mb-4">Schedule an Inspection</h2>
-        <form>
-            <input type="text" class="form-input" placeholder="Name" required>
-            <input type="tel" class="form-input" placeholder="Phone Number" required>
+        <form action="/submit" method="POST">
+            <input type="text" class="form-input" name="name" placeholder="Name" required>
+            <input type="tel" class="form-input" name="phone" placeholder="Phone Number" required>
             <button type="submit" class="submit-btn w-100">Book Now</button>
         </form>
     </div>
