@@ -89,8 +89,14 @@
             </div>
             
             <div style="margin-bottom: 15px;">
-                <label style="display: block; margin-bottom: 5px;">Date:</label>
-                <input type="date" name="date" style="padding: 8px;" required>
+                <label style="display: block; margin-bottom: 5px;">Date (DD.MM.YYYY):</label>
+                <input  type="text"
+                    name="date"
+                    style="padding: 8px;"
+                    placeholder="31.12.2025"
+                    pattern="\d{2}\.\d{2}\.\d{4}"
+                    title="Enter the date in the format DD.MM.YYYY"
+                    required>
             </div>
             
             <button type="submit" style="background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">

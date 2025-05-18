@@ -5,6 +5,7 @@ Routes and views for the bottle application.
 from bottle import route, view, post, request, template, redirect, static_file, response
 import os, json
 from datetime import datetime
+from bottle import HTTPResponse
 
 FEEDBACK_FILE = os.path.join('data', 'feedbacks.json')
 
@@ -64,26 +65,27 @@ def save_booking():
 
 @post('/about/submit-feedback')
 def submit_feedback():
-    name = request.forms.getunicode('name').strip()
-    text = request.forms.getunicode('text').strip()
-    date_raw = request.forms.get('date').strip()          # YYYY-MM-DD
+    name      = request.forms.get('name', '').strip()
+    text      = request.forms.get('text', '').strip()
+    date_raw  = request.forms.get('date', '').strip()
 
     if not (name and text and date_raw):
-        return template('error.tpl', message="All fields are required!")
+        return template('error.tpl',
+                        message='All fields are required!',
+                        year=datetime.now().year)
 
     try:
-        date_obj = datetime.strptime(date_raw, '%Y-%m-%d')
-        date_str = date_obj.strftime('%d.%m.%Y')
+        datetime.strptime(date_raw, '%d.%m.%Y')
     except ValueError:
         return template('error.tpl',
-                        message="Incorrect date format (expecting YYYY-MM-DD).")
+                        message='Incorrect date format (DD.MM.YYYY).',
+                        year=datetime.now().year)
 
     feedbacks = load_data()
-    feedbacks.append({'name': name, 'text': text, 'date': date_str})
+    feedbacks.append({'name': name, 'text': text, 'date': date_raw})
     save_data(feedbacks)
 
-    response.headers['Content-Type'] = 'text/html; charset=UTF-8'
-    return redirect('/about')
+    return HTTPResponse(status=303, headers={'Location': '/about'})
 
 @route('/static/<filepath:path>')
 def server_static(filepath):
