@@ -1,53 +1,43 @@
-% rebase('layout.tpl', title=title, year=year)
+% rebase('layout.tpl', title='About Us - KorAb Group', year=year)
 
-<h3>{{ message }}</h3>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    }
+    h1 {
+        color: #333;
+    }
+    p {
+        font-size: 18px;
+        color: #555;
+    }
+    .contact {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .booking-jumper {
+        margin: 40px 0;
+        text-align: center;
+    }
+    .booking-btn {
+        background: #007bff;
+        color: white;
+        padding: 15px 40px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.1em;
+        transition: background 0.3s;
+    }
+    .booking-btn:hover {
+        background: #0056b3;
+    }
+</style>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KorAb Group - Modern Auto Service</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-        .contact {
-            margin-top: 20px;
-            font-size: 16px;
-        }
-        .booking-jumper {
-            margin: 40px 0;
-            text-align: center;
-        }
-        .booking-btn {
-            background: #007bff;
-            color: white;
-            padding: 15px 40px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1.1em;
-            transition: background 0.3s;
-        }
-        .booking-btn:hover {
-            background: #0056b3;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
+<div class="container">
         <h1><strong>KorAb Group</strong> - one of the new, modern auto services in Saint Petersburg</h1>
         <img src="static\images\Niva.png" alt="Car Repair Process">
         <p>KorAb Group is a next-generation auto repair shop offering repair and diagnostic services for all vehicles.</p>
@@ -69,5 +59,43 @@
             <a href="/#booking" class="booking-btn">Book Inspection Now</a>
         </div>
     </div>
-</body>
-</html>
+    
+    <!-- Feedback section -->
+    <div class="feedback-section" style="margin-top: 40px;">
+        <h2>Customer Feedback</h2>
+        
+        % if not feedbacks:
+            <p>No feedbacks yet. Be the first!</p>
+        % else:
+            % for fb in feedbacks:
+                <div style="background: #f8f9fa; padding: 15px; margin-bottom: 15px; border-radius: 5px;">
+                    <h3>{{ fb['name'] }}</h3>
+                    <small>{{ fb['date'] }}</small>
+                    <p>{{ fb['text'] }}</p>
+                </div>
+            % end
+        % end
+        
+        <!-- Feedback form -->
+        <form method="POST" action="/about/submit-feedback" style="margin-top: 30px;">
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;">Your Name:</label>
+                <input type="text" name="name" style="width: 100%; padding: 8px;" required>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;">Feedback:</label>
+                <textarea name="text" style="width: 100%; padding: 8px; min-height: 100px;" required></textarea>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;">Date:</label>
+                <input type="date" name="date" style="padding: 8px;" required>
+            </div>
+            
+            <button type="submit" style="background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                Submit Feedback
+            </button>
+        </form>
+    </div>
+</div>
