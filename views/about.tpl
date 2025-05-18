@@ -80,12 +80,18 @@
         <form method="POST" action="/about/submit-feedback" style="margin-top: 30px;">
             <div style="margin-bottom: 15px;">
                 <label style="display: block; margin-bottom: 5px;">Your Name:</label>
-                <input type="text" name="name" style="width: 100%; padding: 8px;" required>
+                <input type="text"
+                       name="name"
+                       pattern="[A-Za-z]{3,15}"
+                       title="3-15 English letters"
+                       maxlength="15"
+                       required
+                       style="width:100%; padding:8px;">
             </div>
             
             <div style="margin-bottom: 15px;">
                 <label style="display: block; margin-bottom: 5px;">Feedback:</label>
-                <textarea name="text" style="width: 100%; padding: 8px; min-height: 100px;" required></textarea>
+                <textarea name="text" maxlength="200" style="width: 100%; padding: 8px; min-height: 100px;" required></textarea>
             </div>
             
             <div style="margin-bottom: 15px;">

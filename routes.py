@@ -6,6 +6,9 @@ from bottle import route, view, post, request, template, redirect, static_file, 
 import os, json
 from datetime import datetime
 from bottle import HTTPResponse
+import re
+
+NAME_RE = re.compile(r'^[A-Za-z]{3,15}$')
 
 FEEDBACK_FILE = os.path.join('data', 'feedbacks.json')
 
@@ -44,12 +47,14 @@ def contact():
 @view('about')
 def about():
     feedbacks = load_data()
+    feedbacks_to_show = feedbacks[-5:]
     return dict(
         title='About',
         message='Your application description page.',
         year=datetime.now().year,
-        feedbacks=feedbacks
+        feedbacks=feedbacks_to_show
     )
+
 
 @post('/submit')
 def save_booking():
@@ -65,13 +70,23 @@ def save_booking():
 
 @post('/about/submit-feedback')
 def submit_feedback():
-    name      = request.forms.get('name', '').strip()
-    text      = request.forms.get('text', '').strip()
-    date_raw  = request.forms.get('date', '').strip()
+    name     = request.forms.get('name', '').strip()
+    text     = request.forms.get('text', '').strip()
+    date_raw = request.forms.get('date', '').strip()
 
     if not (name and text and date_raw):
         return template('error.tpl',
                         message='All fields are required!',
+                        year=datetime.now().year)
+
+    if not NAME_RE.fullmatch(name):
+        return template('error.tpl',
+                        message='Name must be 3-15 English letters (A-Z, a-z).',
+                        year=datetime.now().year)
+
+    if len(text) > 200:
+        return template('error.tpl',
+                        message='Feedback must be ? 200 characters.',
                         year=datetime.now().year)
 
     try:
