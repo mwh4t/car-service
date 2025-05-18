@@ -1,4 +1,4 @@
-"""
+﻿"""
 Routes and views for the bottle application.
 """
 
@@ -8,7 +8,7 @@ from datetime import datetime
 from bottle import HTTPResponse
 import re
 
-NAME_RE = re.compile(r'^[A-Za-z]{3,15}$')
+NAME_RE = re.compile(r'^(?=.*[A-Z])[A-Za-z]{3,15}$')
 
 FEEDBACK_FILE = os.path.join('data', 'feedbacks.json')
 
@@ -74,10 +74,11 @@ def submit_feedback():
     text     = request.forms.get('text', '').strip()
     date_raw = request.forms.get('date', '').strip()
 
-    if not (name and text and date_raw):
-        return template('error.tpl',
-                        message='All fields are required!',
-                        year=datetime.now().year)
+    error = validate_feedback(name, text, date_raw)
+    if error:
+        return template('error.tpl', message=error, year=datetime.now().year)
+
+
 
     if not NAME_RE.fullmatch(name):
         return template('error.tpl',
@@ -86,7 +87,7 @@ def submit_feedback():
 
     if len(text) > 200:
         return template('error.tpl',
-                        message='Feedback must be ? 200 characters.',
+                        message='Feedback must be ≤ 200 characters.',
                         year=datetime.now().year)
 
     try:
@@ -106,3 +107,24 @@ def submit_feedback():
 def server_static(filepath):
     """Serves static files"""
     return static_file(filepath, root='static')
+
+def validate_feedback(name: str, text: str, date_raw: str):
+    name = (name or '').strip()
+    text = (text  or '').strip()
+    date_raw = (date_raw or '').strip()
+
+    if not (name and text and date_raw):
+        return 'All fields are required!'
+
+    if not NAME_RE.fullmatch(name):
+        return 'Name must be 3–15 English letters (A-Z, a-z).'
+
+    if len(text) > 200:
+        return 'Feedback must be ≤ 200 characters.'
+
+    try:
+        datetime.strptime(date_raw, '%d.%m.%Y')
+    except ValueError:
+        return 'Incorrect date format (DD.MM.YYYY).'
+
+    return None

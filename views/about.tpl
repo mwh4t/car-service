@@ -83,7 +83,7 @@
                 <input type="text"
                        name="name"
                        pattern="[A-Za-z]{3,15}"
-                       title="3-15 English letters"
+                       title="3-15 English letters, at least 1 uppercase, no spaces"
                        maxlength="15"
                        required
                        style="width:100%; padding:8px;">
