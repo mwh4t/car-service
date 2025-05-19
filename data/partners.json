@@ -1,0 +1,32 @@
+[
+    {
+        "author": "AutoParts Inc.",
+        "description": "Официальный поставщик автозапчастей премиум класса",
+        "date": "15-01-2025",
+        "phone": "+79991234567"
+    },
+    {
+        "author": "MasterService",
+        "description": "Профессиональный ремонт двигателей и трансмиссий",
+        "date": "03-11-2024",
+        "phone": "+74959876543"
+    },
+    {
+        "author": "CarWash Pro",
+        "description": "Эко-мойка автомобилей с применением новейших технологий",
+        "date": "22-08-2024",
+        "phone": "+78125551234"
+    },
+    {
+        "author": "arbuz",
+        "description": "fsdfdsf",
+        "date": "19-05-2025",
+        "phone": "+79318051566"
+    },
+    {
+        "author": "Ananas",
+        "description": "feff",
+        "date": "19-05-2025",
+        "phone": "+79215135799"
+    }
+]
