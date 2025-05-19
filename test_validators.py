@@ -1,6 +1,6 @@
 ﻿# test_validators.py
 import unittest
-from routes import validate_feedback
+from routes import validate_feedback, is_duplicate
 
 VALID_NAME   = "Elizabeth"
 VALID_TEXT   = "Great job! I'll come again."
@@ -56,7 +56,7 @@ class FeedbackValidationTests(unittest.TestCase):
 
     def test_name_without_uppercase(self):
         err = validate_feedback("john", VALID_TEXT, VALID_DATE)
-        self.assertIsNotNone(err)          # Достаточно
+        self.assertIsNotNone(err)       
 
     def test_name_with_space(self):
         err = validate_feedback("John Doe", VALID_TEXT, VALID_DATE)
@@ -80,6 +80,10 @@ class FeedbackValidationTests(unittest.TestCase):
                 err = validate_feedback(name, text, date)
                 self.assertIsNotNone(err)
                 self.assertIn("required", err.lower())
+
+    def test_not_duplicate_different_text(self):
+        self.assertFalse(is_duplicate(self.sample,
+                                      'Den', 'Test', '19.05.2025'))
 
 if __name__ == "__main__":
     unittest.main()

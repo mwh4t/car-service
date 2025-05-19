@@ -97,6 +97,12 @@ def submit_feedback():
                         message='Incorrect date format (DD.MM.YYYY).',
                         year=datetime.now().year)
 
+    if is_duplicate(feedbacks, name, text, date_raw):
+        return template('error.tpl',
+                    message='A feedback with the same name, text and date already exists.',
+                    year=datetime.now().year)
+    
+
     feedbacks = load_data()
     feedbacks.append({'name': name, 'text': text, 'date': date_raw})
     save_data(feedbacks)
@@ -127,4 +133,21 @@ def validate_feedback(name: str, text: str, date_raw: str):
     except ValueError:
         return 'Incorrect date format (DD.MM.YYYY).'
 
+    feedbacks = load_data()
+    if is_duplicate(feedbacks, name, text, date_raw):
+        return template('error.tpl',
+                        message='Such feedback already exists.',
+                        year=datetime.now().year)
+
+    feedbacks.append({'name': name, 'text': text, 'date': date_raw})
+    save_data(feedbacks)
+
     return None
+
+def is_duplicate(feedbacks: list[dict], name: str, text: str, date: str) -> bool:
+    for fb in feedbacks:
+        if (fb.get("name") == name and
+            fb.get("text") == text and
+            fb.get("date") == date):
+            return True
+    return False
