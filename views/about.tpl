@@ -91,7 +91,10 @@
             
             <div style="margin-bottom: 15px;">
                 <label style="display: block; margin-bottom: 5px;">Feedback:</label>
-                <textarea name="text" maxlength="200" style="width: 100%; padding: 8px; min-height: 100px;" required></textarea>
+                <textarea name="text"
+                  maxlength="200"
+                  style="width:100%; padding:8px; min-height:100px; resize:none;"
+                  required></textarea>
             </div>
             
             <div style="margin-bottom: 15px;">
